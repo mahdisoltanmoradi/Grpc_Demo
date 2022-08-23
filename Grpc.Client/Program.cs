@@ -5,8 +5,12 @@ using Grpc.Net.Client;
 
 var channel = GrpcChannel.ForAddress("http://localhost:5007");
 
-//-------------------ActionHello----------------------
-await DefaultRepository.Hello();
+//-------------------Action:SayHello----------------------
+await DefaultRepository.SayHello();
+
+
+//------------------Action:SayHelloList----------------
+await DefaultRepository.SayHelloList();
 
 
 //-------------------InsertStudent----------------------
